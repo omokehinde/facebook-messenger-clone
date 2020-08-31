@@ -1,0 +1,21 @@
+[debug] [2020-08-29T12:58:05.025Z] ----------------------------------------------------------------------
+[debug] [2020-08-29T12:58:05.028Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\omokehinde\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-08-29T12:58:05.029Z] CLI Version:   8.9.2
+[debug] [2020-08-29T12:58:05.029Z] Platform:      win32
+[debug] [2020-08-29T12:58:05.029Z] Node Version:  v12.6.0
+[debug] [2020-08-29T12:58:05.030Z] Time:          Sat Aug 29 2020 13:58:05 GMT+0100 (West Africa Standard Time)
+[debug] [2020-08-29T12:58:05.030Z] ----------------------------------------------------------------------
+[debug] [2020-08-29T12:58:05.031Z] 
+[debug] [2020-08-29T12:58:05.045Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-29T12:58:05.045Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\omokehinde\Documents\NodeProjects\react\facebook-messenger-clone
+
