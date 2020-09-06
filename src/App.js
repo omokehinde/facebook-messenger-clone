@@ -5,6 +5,8 @@ import Message from './Message';
 import db  from './firebase.js';
 import firebase from "firebase";
 import FlipMove from 'react-flip-move';
+import SendIcon from "@material-ui/icons/Send";
+import { IconButton } from "@material-ui/core";
 
 function App() {
   const [input, setInput] = useState('');
@@ -14,7 +16,7 @@ function App() {
   useEffect(()=>{
     // run once when the component loads
     db.collection('messages')
-    .orderBy('timestamp', 'desc')
+    .orderBy('timestamp', 'asc')
     .onSnapshot(snapshot => {
       setMessages(snapshot.docs.map(doc => ({id: doc.id, message: doc.data()})));
     });
@@ -39,21 +41,22 @@ function App() {
   
   return (
     <div className="App">
-      <h1>Hello Clever Programmer <span>&#128540;</span>
+      <img src="fb-messanger-logo.JPG" />
+      <h1>facebook messanger clone... <span>&#128540;</span>
       <span>&#128579;</span>
       <span>&#128640;</span>! </h1>
       <h2>Welcome {username}. </h2>
       {/* To dos  */}
-      <form>
+      <form className="app__form">
         {/* material-ui form control */}
-        <FormControl>
+        <FormControl className="app__formControl">
         {/* input label and field  */}
-          <InputLabel >Type a message here...</InputLabel>
-          <Input value={input} onChange={event => setInput(event.target.value)} />
-          <Button variant="contained" color="primary" type='submit' 
-            disabled={!input}  onClick={sendMessage}>
-            Send Message
-          </Button>
+          <Input className="app__input" placeholder="Enter a message..." value={input} onChange={event => setInput(event.target.value)} />
+          <IconButton className="app__iconButton"
+           variant="contained" color="primary" type='submit' 
+           disabled={!input}  onClick={sendMessage}>
+             <SendIcon/>
+          </IconButton>
         </FormControl>
       {/* buttons  */}
       </form>
